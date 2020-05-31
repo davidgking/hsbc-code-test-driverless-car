@@ -1,7 +1,7 @@
 @Pilot
 Feature: Driverless pilot
   Scenario Outline: Pilot1
-    Given Build a rectangular car park min X:<MinPositionX> min Y:<MinPositionY>, max X:<MaxPositionX> max Y:<MaxPositionY> and driver a car in it X:<CarPositionX> Y:<CarPositionY>, orientation:<CarOrientation>
+    Given Build a rectangular car park min X:<MinPositionX> min Y:<MinPositionY>, max X:<MaxPositionX> max Y:<MaxPositionY> and drive a car in it X:<CarPositionX> Y:<CarPositionY>, orientation:<CarOrientation>
     When Input the commands:<Commands>
     Then The car will be on X:<CarLastPositionX> Y:<CarLastPositionY>, orientation:<CarLastOrientation>
 
