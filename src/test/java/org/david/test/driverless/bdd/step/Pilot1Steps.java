@@ -11,7 +11,7 @@ public class Pilot1Steps {
     private MovementArea carPark;
     private Car driverlessCar;
 
-    @Given("^Build a rectangular car park min X:(\\S*) min Y:(\\S*), max X:(\\S*) max Y:(\\S*) and driver a car in it X:(\\S*) Y:(\\S*), orientation:(\\S*)$")
+    @Given("^Build a rectangular car park min X:(\\S*) min Y:(\\S*), max X:(\\S*) max Y:(\\S*) and drive a car in it X:(\\S*) Y:(\\S*), orientation:(\\S*)$")
     public void build_a_rectangular_car_park_movement_area_and_driver_a_car_in_it_position_orientation_EAST(int minPositionX, int minPositionY, int maxPositionX, int maxPositionY, int carPositionX, int carPositionY, String carOrientation) {
         this.carPark = new CarPark(minPositionX, minPositionY, maxPositionX, maxPositionY);
         Position carPosition = new Position(carPositionX, carPositionY);
